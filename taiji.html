@@ -1,0 +1,57 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>taiji</title>  
+</head>  
+<body>
+<canvas id="taiji" width="400" height="400" style="background-color:azure; ">
+    </canvas>
+
+    <script type = "text/javascript">
+        var taiji = document.getElementById("taiji");
+        var bild = taiji.getContext("2d");
+        
+        bild.fillStyle = "#FFFFFF";
+        bild.beginPath();
+        bild.arc(200,200,150,1.5*Math.PI,Math.PI/2,false);
+        bild.closePath();
+        bild.fill();
+
+        bild.fillStyle = "#000000";
+        bild.beginPath();
+        bild.arc(200,200,150,Math.PI/2,1.5*Math.PI,false);
+        bild.closePath();
+        bild.fill();
+        
+        bild.fillStyle="#000000";
+        bild.beginPath();
+        bild.arc(200,275,75,0,2*Math.PI,false);
+        bild.closePath();
+        bild.fill();
+        
+        bild.fillStyle="#FFFFFF";
+        bild.beginPath();
+        bild.arc(200,125,75,0,2*Math.PI,false);
+        bild.closePath();
+        bild.fill();
+        
+        bild.fillStyle="FFFFFF";
+        bild.beginPath();
+        bild.arc(200,275,20,0,2*Math.PI,false);
+        bild.closePath();
+        bild.fill();
+        
+
+        bild.fillStyle="#000000";
+        bild.beginPath();
+        bild.arc(200,125,20,0,2*Math.PI,false);
+        bild.closePath();
+        bild.fill();
+        </script>
+
+    </script>
+
+
+</body>
+</html>
